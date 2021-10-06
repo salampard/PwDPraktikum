@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Tamu</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="center">
+
+    <form action="prosesSimpanGuestbook.php" method="post" name="prosesSimpanGuestbook">
+        <table>
+
+            <tr>
+                <td>Nama Lengkap</td>
+                <td><input type="text" name="inputnamaGuest" id="inputnamaGuest"></td>
+            </tr>
+
+            <tr>
+                <td>Alamat</td>
+                <td><input type="text" name="inputalamatGuest" id="inputalamatGuest"></td>
+            </tr>
+
+            <tr>
+                <td>E-mail</td>
+                <td><input type="email" name="inputemailGuest" id="inputemailGuest"></td>
+            </tr>
+
+            <tr>
+                <td>Status</td>
+                <td>
+                    <select name="inputstatusGuest" id="inputstatusGuest">
+                        <option value="Menikah">Menikah</option>
+                        <option value="Single">Single</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Komentar</td>
+                <td>
+                    <textarea name="inputkomentarGuest" id="inputkomentarGuest"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <input type="submit" name="submit" value="kirim">
+                    <input type="reset" name="submit2" id="batal">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+    <div style="margin-top: 1rem;">
+        <a href="isiGuestbook.php">Lihat Buku Tamu</a>
+    </div>
+
+</div>
+    
+</body>
+</html>
